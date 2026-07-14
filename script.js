@@ -9,20 +9,17 @@ const btnVi = document.getElementById("btn-vi");
 const langElements = document.querySelectorAll(".lang");
 
 function changeLanguage(lang) {
-    // Cập nhật trạng thái active cho nút bấm
     if (lang === "vi") {
-        btnVi.classList.add("active");
-        btnEn.classList.remove("active");
+        if(btnVi) btnVi.classList.add("active");
+        if(btnEn) btnEn.removeClassName ? btnEn.removeClassName("active") : btnEn.classList.remove("active");
     } else {
-        btnEn.classList.add("active");
-        btnVi.classList.remove("active");
+        if(btnEn) btnEn.classList.add("active");
+        if(btnVi) btnVi.removeClassName ? btnVi.removeClassName("active") : btnVi.classList.remove("active");
     }
 
-    // Quét qua các thẻ có class "lang" để dịch
     langElements.forEach(el => {
         const text = el.getAttribute(`data-${lang}`);
         if (text) {
-            // Nếu thẻ chứa HTML (như thẻ <br> để xuống dòng) thì dùng innerHTML, ngược lại dùng textContent
             if (text.includes("<br>") || text.includes("✔")) {
                 el.innerHTML = text;
             } else {
@@ -31,17 +28,14 @@ function changeLanguage(lang) {
         }
     });
 
-    // Lưu lựa chọn ngôn ngữ của người dùng vào bộ nhớ trình duyệt (Local Storage)
     localStorage.setItem("preferredLanguage", lang);
 }
 
-// Lắng nghe sự kiện click trên các nút chuyển ngôn ngữ
 if (btnEn && btnVi) {
     btnEn.addEventListener("click", () => changeLanguage("en"));
     btnVi.addEventListener("click", () => changeLanguage("vi"));
 }
 
-// Khi tải trang: Tự động áp dụng ngôn ngữ đã chọn trước đó hoặc mặc định là tiếng Anh (EN)
 document.addEventListener("DOMContentLoaded", () => {
     const savedLang = localStorage.getItem("preferredLanguage") || "en";
     changeLanguage(savedLang);
