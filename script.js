@@ -50,9 +50,9 @@ window.addEventListener("scroll", () => {
         header.style.background = "rgba(15,15,15,.92)";
         header.style.backdropFilter = "blur(18px)";
         header.style.boxShadow = "0 15px 35px rgba(0,0,0,.25)";
-        header.style.padding = "18px 7%";
+        header.style.padding = "15px 7%";
     } else {
-        header.style.background = "rgba(0,0,0,.15)";
+        header.style.background = "rgba(0,0,0,.3)";
         header.style.boxShadow = "none";
         header.style.padding = "25px 7%";
     }
@@ -62,18 +62,21 @@ window.addEventListener("scroll", () => {
 // 3. Smooth Scroll
 document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener("click", function(e){
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute("href"));
-        if(target){
-            target.scrollIntoView({
-                behavior:"smooth"
-            });
+        const hrefAttr = this.getAttribute("href");
+        if(hrefAttr.startsWith("#")) {
+            e.preventDefault();
+            const target = document.querySelector(hrefAttr);
+            if(target){
+                target.scrollIntoView({
+                    behavior:"smooth"
+                });
+            }
         }
     });
 });
 
 
-// 4. Fade Animation
+// 4. Fade Animation (Intersection Observer)
 const observer = new IntersectionObserver((entries)=>{
     entries.forEach(entry=>{
         if(entry.isIntersecting){
@@ -81,7 +84,7 @@ const observer = new IntersectionObserver((entries)=>{
         }
     });
 },{
-    threshold:0.15
+    threshold: 0.1
 });
 
 document.querySelectorAll("section").forEach(section=>{
