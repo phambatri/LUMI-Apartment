@@ -11,10 +11,10 @@ const langElements = document.querySelectorAll(".lang");
 function changeLanguage(lang) {
     if (lang === "vi") {
         if(btnVi) btnVi.classList.add("active");
-        if(btnEn) btnEn.removeClassName ? btnEn.removeClassName("active") : btnEn.classList.remove("active");
+        if(btnEn) btnEn.classList.remove("active");
     } else {
         if(btnEn) btnEn.classList.add("active");
-        if(btnVi) btnVi.removeClassName ? btnVi.removeClassName("active") : btnVi.classList.remove("active");
+        if(btnVi) btnVi.classList.remove("active");
     }
 
     langElements.forEach(el => {
