@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lumi Apartment | Nha Trang</title>
-    <meta name="description" content="Modern serviced apartments for long-term stay in Nha Trang. Fully furnished, free electricity, high-speed WiFi and premium amenities.">
+    <meta name="description" content="Modern serviced apartments for long-term stay in Nha Trang. Fully furnished, high-speed WiFi and premium amenities.">
     
-    <!-- Thêm mã xác minh Google Search Console ở đây -->
+    <!-- Mã xác minh Google Search Console -->
     <meta name="google-site-verification" content="WnWj3J8N8BafD29kVXoXxU5u21IPFzSpm9PbH59zaJg" />
 
     <link rel="stylesheet" href="style.css">
@@ -26,17 +26,23 @@
         </div>
 
         <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#rooms">Apartments</a>
-            <a href="#amenities">Amenities</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#contact">Contact</a>
+            <a href="#home" class="lang" data-en="Home" data-vi="Trang Chủ">Home</a>
+            <a href="#about" class="lang" data-en="About" data-vi="Giới Thiệu">About</a>
+            <a href="#rooms" class="lang" data-en="Apartments" data-vi="Căn Hộ">Apartments</a>
+            <a href="#amenities" class="lang" data-en="Amenities" data-vi="Tiện Ích">Amenities</a>
+            <a href="#gallery" class="lang" data-en="Gallery" data-vi="Hình Ảnh">Gallery</a>
+            <a href="#contact" class="lang" data-en="Contact" data-vi="Liên Hệ">Contact</a>
         </nav>
 
-        <a href="#contact" class="book-btn">
-            Book Now
-        </a>
+        <div class="header-right">
+            <!-- Nút chuyển ngôn ngữ tinh tế -->
+            <div class="lang-switcher">
+                <span id="btn-en" class="active">EN</span> | <span id="btn-vi">VI</span>
+            </div>
+            <a href="tel:0332260026" class="book-btn lang" data-en="Book Now" data-vi="Đặt Phòng">
+                Book Now
+            </a>
+        </div>
     </header>
 
     <!-- ================= HERO ================= -->
@@ -44,43 +50,43 @@
         <div class="overlay"></div>
         <div class="hero-content">
             <p class="sub-title">NHA TRANG • VIETNAM</p>
-            <h1>Lumi Apartment</h1>
-            <h3>Modern Serviced Apartments</h3>
-            <p class="description">
-                Welcome to Lumi Apartment Nha Trang.
-                Brand-new fully furnished apartments located in the peaceful Phuoc Long B Urban Area.
-                Only around 5 minutes from the beach, perfect for long-term living, digital nomads, couples and business travelers.
+            <h1 class="lang" data-en="Lumi Apartment" data-vi="Căn Hộ Lumi">Lumi Apartment</h1>
+            <h3 class="lang" data-en="Modern Serviced Apartments" data-vi="Căn Hộ Dịch Vụ Hiện Đại">Modern Serviced Apartments</h3>
+            <p class="description lang" 
+               data-en="Welcome to Lumi Apartment Nha Trang. Brand-new fully furnished apartments located in the peaceful Phuoc Long B Urban Area. Only around 5 minutes from the beach, perfect for long-term living, digital nomads, couples and business travelers." 
+               data-vi="Chào mừng bạn đến với Lumi Apartment Nha Trang. Căn hộ dịch vụ mới tinh, trang bị đầy đủ nội thất tọa lạc tại Khu đô thị Phước Long B yên bình. Chỉ mất khoảng 5 phút ra biển, lựa chọn hoàn hảo cho thuê dài hạn, khách làm việc từ xa, các cặp đôi và chuyên gia.">
+                Welcome to Lumi Apartment Nha Trang. Brand-new fully furnished apartments located in the peaceful Phuoc Long B Urban Area. Only around 5 minutes from the beach, perfect for long-term living, digital nomads, couples and business travelers.
             </p>
             <div class="hero-buttons">
-                <a href="#rooms" class="primary">View Apartments</a>
-                <a href="#contact" class="secondary">Contact Us</a>
+                <a href="#rooms" class="primary lang" data-en="View Apartments" data-vi="Xem Căn Hộ">View Apartments</a>
+                <a href="tel:0332260026" class="secondary lang" data-en="Call Us Now" data-vi="Gọi Ngay">Call Us Now</a>
             </div>
         </div>
-        <div class="scroll">Scroll Down</div>
+        <div class="scroll lang" data-en="Scroll Down" data-vi="Cuộn Xuống">Scroll Down</div>
     </section>
 
     <!-- ================= ABOUT ================= -->
     <section id="about" class="about">
         <div class="container">
-            <p class="section-tag">WELCOME TO LUMI APARTMENT</p>
-            <h2>Modern Living In The Heart Of Nha Trang</h2>
-            <p class="about-text">
-                Welcome to <strong>Lumi Apartment Nha Trang</strong>.
-                We provide brand-new serviced apartments designed for comfort, privacy and long-term living.
-                Located in a peaceful residential area with modern infrastructure, Lumi Apartment is an ideal choice for professionals, expats, digital nomads and couples who are looking for a comfortable place to stay in Nha Trang.
+            <p class="section-tag lang" data-en="WELCOME TO LUMI APARTMENT" data-vi="CHÀO MỪNG ĐẾN VỚI LUMI APARTMENT">WELCOME TO LUMI APARTMENT</p>
+            <h2 class="lang" data-en="Modern Living In The Heart Of Nha Trang" data-vi="Không Gian Sống Hiện Đại Tại Nha Trang">Modern Living In The Heart Of Nha Trang</h2>
+            <p class="about-text lang" 
+               data-en="Welcome to Lumi Apartment Nha Trang. We provide brand-new serviced apartments designed for comfort, privacy and long-term living. Located in a peaceful residential area with modern infrastructure, Lumi Apartment is an ideal choice for professionals, expats, digital nomads and couples who are looking for a comfortable place to stay in Nha Trang."
+               data-vi="Chào mừng bạn đến với Lumi Apartment Nha Trang. Chúng tôi cung cấp các căn hộ dịch vụ mới xây, thiết kế hướng đến sự thoải mái, riêng tư và lưu trú dài hạn. Nằm trong khu dân cư an ninh, yên tĩnh với hạ tầng hiện đại, Lumi là sự lựa chọn lý tưởng cho các chuyên gia, người nước ngoài và các cặp đôi tại Nha Trang.">
+                Welcome to Lumi Apartment Nha Trang. We provide brand-new serviced apartments designed for comfort, privacy and long-term living. Located in a peaceful residential area with modern infrastructure, Lumi Apartment is an ideal choice for professionals, expats, digital nomads and couples who are looking for a comfortable place to stay in Nha Trang.
             </p>
             <div class="about-grid">
                 <div class="about-item">
-                    <h3>📍 Prime Location</h3>
-                    <p>40 Lam Uy Street<br>Phuoc Long B Urban Area<br>Nha Trang</p>
+                    <h3 class="lang" data-en="📍 Prime Location" data-vi="📍 Vị Trí Đắc Địa">📍 Prime Location</h3>
+                    <p class="lang" data-en="40 Lam Uy Street<br>Phuoc Long B Urban Area<br>Nha Trang" data-vi="40 Đường Lâm Úy<br>Khu Đô Thị Phước Long B<br>Nha Trang">40 Lam Uy Street<br>Phuoc Long B Urban Area<br>Nha Trang</p>
                 </div>
                 <div class="about-item">
-                    <h3>🏖 Beach Access</h3>
-                    <p>Approximately 5 minutes by motorbike<br>to Binh Tan Beach<br>(Former Airport Area)</p>
+                    <h3 class="lang" data-en="🏖 Beach Access" data-vi="🏖 Gần Biển">🏖 Beach Access</h3>
+                    <p class="lang" data-en="Approximately 5 minutes by motorbike<br>to Binh Tan Beach<br>(Former Airport Area)" data-vi="Chỉ khoảng 5 phút đi xe máy<br>ra bãi tắm Bình Tân<br>(Khu sân bay cũ)">Approximately 5 minutes by motorbike<br>to Binh Tan Beach<br>(Former Airport Area)</p>
                 </div>
                 <div class="about-item">
-                    <h3>🌳 Peaceful Environment</h3>
-                    <p>Located near green parks, coffee shops, restaurants, supermarkets and local conveniences.</p>
+                    <h3 class="lang" data-en="🌳 Peaceful Environment" data-vi="🌳 Môi Trường Yên Bình">🌳 Peaceful Environment</h3>
+                    <p class="lang" data-en="Located near green parks, coffee shops, restaurants, supermarkets and local conveniences." data-vi="Nằm gần công viên xanh, quán cà phê, nhà hàng, siêu thị và các tiện ích dân sinh tiện lợi.">Located near green parks, coffee shops, restaurants, supermarkets and local conveniences.</p>
                 </div>
             </div>
         </div>
@@ -89,39 +95,35 @@
     <!-- ================= APARTMENTS ================= -->
     <section id="rooms" class="rooms">
         <div class="container">
-            <p class="section-tag">OUR APARTMENTS</p>
-            <h2>Choose Your Perfect Apartment</h2>
+            <p class="section-tag lang" data-en="OUR APARTMENTS" data-vi="DANH SÁCH CĂN HỘ">OUR APARTMENTS</p>
+            <h2 class="lang" data-en="Choose Your Perfect Apartment" data-vi="Chọn Căn Hộ Phù Hợp Với Bạn">Choose Your Perfect Apartment</h2>
             <div class="room-grid">
+                
                 <div class="room-card">
-                    <img src="assets/images/studio.jpg" alt="Studio Apartment">
+                    <img src="assets/images/studio.jpg" alt="One Bedroom Apartment">
                     <div class="room-content">
-                        <h3>Studio Apartment</h3>
-                        <h4>8,000,000 VND / Month</h4>
-                        <p>
-                            Perfect for one person.<br>
-                            Private bathroom.<br>
-                            Working desk.<br>
-                            Fully furnished.<br>
-                            Comfortable queen-size bed.<br>
-                            Modern interior.
+                        <h3 class="lang" data-en="One Bedroom Apartment" data-vi="Căn Hộ 1 Phòng Ngủ">One Bedroom Apartment</h3>
+                        <h4>8,000,000 VND <span class="lang" data-en="/ Month" data-vi="/ Tháng">/ Month</span></h4>
+                        <p class="lang" 
+                           data-en="Perfect for 2 people.<br>Private bathroom.<br>Working desk.<br>Fully furnished.<br>Comfortable queen-size bed.<br>Modern interior."
+                           data-vi="Phù hợp cho 2 người.<br>Phòng tắm riêng biệt.<br>Bàn làm việc tiện lợi.<br>Nội thất đầy đủ.<br>Giường Queen êm ái.<br>Không gian hiện đại.">
+                            Perfect for 2 people.<br>Private bathroom.<br>Working desk.<br>Fully furnished.<br>Comfortable queen-size bed.<br>Modern interior.
                         </p>
-                        <a href="#contact">Book This Apartment</a>
+                        <a href="tel:0332260026" class="lang" data-en="Book This Apartment" data-vi="Liên Hệ Đặt Phòng">Book This Apartment</a>
                     </div>
                 </div>
+                
                 <div class="room-card">
-                    <img src="assets/images/one-bedroom.jpg" alt="One Bedroom Apartment">
+                    <img src="assets/images/one-bedroom.jpg" alt="Double Bedroom Balcony">
                     <div class="room-content">
-                        <h3>One Bedroom Apartment</h3>
-                        <h4>12,000,000 VND / Month</h4>
-                        <p>
-                            Ideal for couples.<br>
-                            Separate bedroom.<br>
-                            Private living room.<br>
-                            Modern kitchen.<br>
-                            Spacious layout.<br>
-                            Fully furnished.
+                        <h3 class="lang" data-en="Double Bedroom Balcony" data-vi="Căn Hộ Giường Đôi Có Ban Công">Double Bedroom Balcony</h3>
+                        <h4>12,000,000 VND <span class="lang" data-en="/ Month" data-vi="/ Tháng">/ Month</span></h4>
+                        <p class="lang" 
+                           data-en="Perfect for family.<br>Double bedroom with balcony.<br>Private balcony with nice view.<br>Modern kitchen.<br>Spacious layout.<br>Fully furnished."
+                           data-vi="Phù hợp cho gia đình.<br>Phòng giường đôi có ban công.<br>Ban công riêng view thoáng mát.<br>Khu bếp hiện đại.<br>Thiết kế rộng rãi.<br>Đầy đủ tiện nghi.">
+                            Perfect for family.<br>Double bedroom with balcony.<br>Private balcony with nice view.<br>Modern kitchen.<br>Spacious layout.<br>Fully furnished.
                         </p>
-                        <a href="#contact">Book This Apartment</a>
+                        <a href="tel:0332260026" class="lang" data-en="Book This Apartment" data-vi="Liên Hệ Đặt Phòng">Book This Apartment</a>
                     </div>
                 </div>
             </div>
@@ -131,40 +133,40 @@
     <!-- ================= AMENITIES ================= -->
     <section id="amenities" class="services">
         <div class="container">
-            <p class="section-tag">WHY CHOOSE LUMI</p>
-            <h2>Premium Amenities</h2>
+            <p class="section-tag lang" data-en="WHY CHOOSE LUMI" data-vi="TẠI SAO CHỌN LUMI">WHY CHOOSE LUMI</p>
+            <h2 class="lang" data-en="Premium Amenities" data-vi="Tiện Ích Cao Cấp">Premium Amenities</h2>
             <div class="cards">
                 <div class="card">
-                    <h3>🛗 Elevator</h3>
-                    <p>Modern elevator provides quick and convenient access to every floor.</p>
+                    <h3 class="lang" data-en="🛗 Elevator" data-vi="🛗 Thang Máy">🛗 Elevator</h3>
+                    <p class="lang" data-en="Modern elevator provides quick and convenient access to every floor." data-vi="Thang máy hiện đại giúp di chuyển nhanh chóng và tiện lợi giữa các tầng.">Modern elevator provides quick and convenient access to every floor.</p>
                 </div>
                 <div class="card">
-                    <h3>🔒 Smart Door Lock</h3>
-                    <p>Secure smart lock and key card system for your safety.</p>
+                    <h3 class="lang" data-en="🔒 Smart Door Lock" data-vi="🔒 Khóa Cửa Thông Minh">🔒 Smart Door Lock</h3>
+                    <p class="lang" data-en="Secure smart lock and key card system for your safety." data-vi="Hệ thống khóa thông minh và thẻ từ bảo mật tối đa cho bạn.">Secure smart lock and key card system for your safety.</p>
                 </div>
                 <div class="card">
-                    <h3>🛏 Fully Furnished</h3>
-                    <p>Comfortable bed, wardrobe, desk, chair and modern interior.</p>
+                    <h3 class="lang" data-en="🛏 Fully Furnished" data-vi="🛏 Đầy Đủ Nội Thất">🛏 Fully Furnished</h3>
+                    <p class="lang" data-en="Comfortable bed, wardrobe, desk, chair and modern interior." data-vi="Trang bị sẵn giường êm, tủ quần áo, bàn ghế làm việc hiện đại.">Comfortable bed, wardrobe, desk, chair and modern interior.</p>
                 </div>
                 <div class="card">
-                    <h3>❄ Air Conditioner</h3>
-                    <p>Modern air conditioning keeps every room cool all year round.</p>
+                    <h3 class="lang" data-en="❄ Air Conditioner" data-vi="❄ Điều Hòa Máy Lạnh">❄ Air Conditioner</h3>
+                    <p class="lang" data-en="Modern air conditioning keeps every room cool all year round." data-vi="Hệ thống điều hòa thế hệ mới giữ không gian luôn mát mẻ quanh năm.">Modern air conditioning keeps every room cool all year round.</p>
                 </div>
                 <div class="card">
-                    <h3>🍳 Kitchen</h3>
-                    <p>Private kitchen equipped with stove and cooking utensils.</p>
+                    <h3>🍳 <span class="lang" data-en="Kitchen" data-vi="Nhà Bếp">Kitchen</span></h3>
+                    <p class="lang" data-en="Private kitchen equipped with stove and cooking utensils." data-vi="Gian bếp riêng được trang bị sẵn bếp nấu và dụng cụ làm bếp cơ bản.">Private kitchen equipped with stove and cooking utensils.</p>
                 </div>
                 <div class="card">
-                    <h3>🧺 Washing Machine</h3>
-                    <p>Washing machine available inside the apartment or shared area.</p>
+                    <h3 class="lang" data-en="🧺 Washing Machine" data-vi="🧺 Máy Giặt">🧺 Washing Machine</h3>
+                    <p class="lang" data-en="Washing machine available inside the apartment or shared area." data-vi="Máy giặt tiện lợi được bố trí sẵn trong căn hộ hoặc khu vực chung.">Washing machine available inside the apartment or shared area.</p>
                 </div>
                 <div class="card">
-                    <h3>🌐 High-Speed WiFi</h3>
-                    <p>Reliable internet connection for work, study and entertainment.</p>
+                    <h3 class="lang" data-en="🌐 High-Speed WiFi" data-vi="🌐 WiFi Tốc Độ Cao">🌐 High-Speed WiFi</h3>
+                    <p class="lang" data-en="Reliable internet connection for work, study and entertainment." data-vi="Đường truyền Internet ổn định, mượt mà phục vụ công việc và giải trí.">Reliable internet connection for work, study and entertainment.</p>
                 </div>
                 <div class="card">
-                    <h3>☀ FREE Electricity</h3>
-                    <p>The building uses a solar power system. Electricity is completely FREE. Only water usage is charged.</p>
+                    <h3 class="lang" data-en="🅿 Motorbike Parking" data-vi="🅿 Chỗ Đậu Xe Máy">🅿 Motorbike Parking</h3>
+                    <p class="lang" data-en="Safe and convenient motorbike parking area inside the building." data-vi="Khu vực để xe máy an toàn, rộng rãi và tiện lợi ngay trong tòa nhà.">Safe and convenient motorbike parking area inside the building.</p>
                 </div>
             </div>
         </div>
@@ -173,11 +175,12 @@
     <!-- ================= RENTAL TERMS ================= -->
     <section class="rental-terms">
         <div class="container">
-            <p class="section-tag">RENTAL INFORMATION</p>
-            <h2>Flexible Rental Terms</h2>
-            <p>
-                ✔ Electricity is FREE (Solar Energy System)<br><br>
-                ✔ Water fee is charged separately<br><br>
+            <p class="section-tag lang" data-en="RENTAL INFORMATION" data-vi="THÔNG TIN THUÊ PHÒNG">RENTAL INFORMATION</p>
+            <h2 class="lang" data-en="Flexible Rental Terms" data-vi="Chính Sách Thuê Linh Hoạt">Flexible Rental Terms</h2>
+            <p class="lang"
+               data-en="✔ Electricity & Water fees are charged separately<br><br>✔ Security Deposit: One Month<br><br>✔ Contract: 3–6 Months or 1 Year"
+               data-vi="✔ Chi phí Điện & Nước được tính riêng biệt<br><br>✔ Tiền đặt cọc: 01 Tháng tiền phòng<br><br>✔ Thời hạn hợp đồng: 3–6 Tháng hoặc 1 Năm">
+                ✔ Electricity & Water fees are charged separately<br><br>
                 ✔ Security Deposit: One Month<br><br>
                 ✔ Contract: 3–6 Months or 1 Year
             </p>
@@ -187,12 +190,12 @@
     <!-- ================= GALLERY ================= -->
     <section id="gallery" class="gallery">
         <div class="container">
-            <p class="section-tag">PHOTO GALLERY</p>
-            <h2>Discover Lumi Apartment</h2>
+            <p class="section-tag lang" data-en="PHOTO GALLERY" data-vi="BỘ SƯU TẬP ẢNH">PHOTO GALLERY</p>
+            <h2 class="lang" data-en="Discover Lumi Apartment" data-vi="Khám Phá Lumi Apartment">Discover Lumi Apartment</h2>
             <div class="gallery-grid">
                 <img src="assets/images/building.jpg" alt="Building">
-                <img src="assets/images/studio.jpg" alt="Studio Apartment">
-                <img src="assets/images/one-bedroom.jpg" alt="One Bedroom Apartment">
+                <img src="assets/images/studio.jpg" alt="One Bedroom Apartment">
+                <img src="assets/images/one-bedroom.jpg" alt="Double Bedroom Balcony">
                 <img src="assets/images/kitchen.jpg" alt="Kitchen">
                 <img src="assets/images/lobby.jpg" alt="Lobby">
                 <img src="assets/images/view.jpg" alt="City View">
@@ -203,30 +206,42 @@
     <!-- ================= CONTACT ================= -->
     <section id="contact" class="booking">
         <div class="container">
-            <p class="section-tag">CONTACT US</p>
-            <h2>Book Your Apartment</h2>
-            <p class="contact-text">Interested in staying at Lumi Apartment? Contact us today for availability and schedule a viewing.</p>
+            <p class="section-tag lang" data-en="CONTACT US" data-vi="LIÊN HỆ VỚI CHÚNG TÔI">CONTACT US</p>
+            <h2 class="lang" data-en="Book Your Apartment" data-vi="Đặt Lịch Xem Phòng ngay">Book Your Apartment</h2>
+            <p class="contact-text lang" data-en="Interested in staying at Lumi Apartment? Contact us today for availability and schedule a viewing." data-vi="Bạn muốn thuê căn hộ tại Lumi? Liên hệ ngay hôm nay để kiểm tra phòng trống và đặt lịch xem thực tế.">Interested in staying at Lumi Apartment? Contact us today for availability and schedule a viewing.</p>
             
             <form action="https://formspree.io/f/xjgnvwbe" method="POST">
                 <input type="text" name="name" placeholder="Full Name" required>
                 <input type="email" name="email" placeholder="Email Address" required>
                 <input type="tel" name="phone" placeholder="Phone Number">
                 <textarea name="message" placeholder="Write your message..." required></textarea>
-                <button type="submit">Send Inquiry</button>
+                <button type="submit" class="lang" data-en="Send Inquiry" data-vi="Gửi Yêu Cầu">Send Inquiry</button>
             </form>
 
             <div class="contact-info">
                 <div class="contact-box">
-                    <h3>📍 Address</h3>
+                    <h3 class="lang" data-en="📍 Address" data-vi="📍 Địa Chỉ">📍 Address</h3>
                     <p>40 Lam Uy Street<br>Phuoc Long B Urban Area<br>Nha Trang, Vietnam</p>
                 </div>
                 <div class="contact-box">
-                    <h3>📞 Telegram / Zalo</h3>
-                    <p>+84 332 260 026</p>
+                    <h3 class="lang" data-en="📞 Phone & Zalo" data-vi="📞 Điện Thoại & Zalo">📞 Phone & Zalo</h3>
+                    <p>
+                        <a href="tel:0332260026" style="color: inherit; text-decoration: none; display: inline-block; margin-bottom: 5px;">
+                            <i class="fa-solid fa-phone"></i> +84 332 260 026
+                        </a><br>
+                        <a href="https://zalo.me/0332260026" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">
+                            <i class="fa-solid fa-comment-sms"></i> Zalo: 033 226 0026
+                        </a>
+                    </p>
                 </div>
                 <div class="contact-box">
-                    <h3>🌐 Languages</h3>
-                    <p>English & Vietnamese</p>
+                    <h3 class="lang" data-en="🌐 Social Media" data-vi="🌐 Mạng Xã Hội">🌐 Social Media</h3>
+                    <p style="margin-bottom: 5px;" class="lang" data-en="English & Vietnamese" data-vi="Hỗ trợ Tiếng Anh & Tiếng Việt">English & Vietnamese</p>
+                    <div class="social-links" style="display: flex; gap: 15px; margin-top: 8px;">
+                        <a href="#" target="_blank" rel="noopener noreferrer" style="color: #1877F2; font-size: 20px; text-decoration: none;">
+                            <i class="fa-brands fa-facebook"></i> Facebook
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -235,11 +250,24 @@
     <!-- ================= FOOTER ================= -->
     <footer>
         <div class="footer-logo">LUMI</div>
-        <p>Modern Serviced Apartments in Nha Trang</p>
+        <p class="lang" data-en="Modern Serviced Apartments in Nha Trang" data-vi="Căn Hộ Dịch Vụ Hiện Đại tại Nha Trang">Modern Serviced Apartments in Nha Trang</p>
         <p>© 2026 Lumi Apartment. All Rights Reserved.</p>
     </footer>
 
-    <!-- NHÚNG FILE SCRIPT.JS XUỐNG CUỐI TRANG -->
+    <!-- Nút liên hệ nổi cố định ở góc phải màn hình -->
+    <div class="floating-contact">
+        <a href="tel:0332260026" class="floating-btn phone-btn" title="Call Now">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+        <a href="https://zalo.me/0332260026" target="_blank" rel="noopener noreferrer" class="floating-btn zalo-btn" title="Chat on Zalo">
+            <span class="zalo-text">Zalo</span>
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="floating-btn fb-btn" title="Chat on Facebook">
+            <i class="fa-brands fa-facebook-messenger"></i>
+        </a>
+    </div>
+
+    <!-- SCRIPT.JS -->
     <script src="script.js"></script>
 </body>
 </html>
