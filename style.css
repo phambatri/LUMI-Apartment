@@ -19,11 +19,10 @@ body{
     color:#222;
     overflow-x:hidden;
     line-height:1.7;
-    opacity: 0; /* Sẽ được script.js kích hoạt class .loaded */
+    opacity: 0;
     transition: opacity .8s ease;
 }
 
-/* Fallback: Nếu không load được JS sau 1.5 giây thì vẫn hiện trang */
 body.loaded {
     opacity: 1 !important;
 }
@@ -43,7 +42,7 @@ a{
     margin:auto;
 }
 
-/* ================= HEADER (TỐI ƯU CHỐNG ĐÈ CHỮ) ================= */
+/* ================= HEADER ================= */
 
 header{
     position:fixed;
@@ -53,7 +52,7 @@ header{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px 5%; /* Tối ưu lại padding để thoáng hơn */
+    padding:20px 5%;
     z-index:9999;
     transition:.45s;
     background:rgba(0,0,0,.15);
@@ -62,7 +61,7 @@ header{
 
 .logo{
     font-family:'Cormorant Garamond',serif;
-    font-size:36px; /* Giảm nhẹ để nhường khoảng trống cho menu */
+    font-size:36px;
     color:#fff;
     font-weight:700;
     letter-spacing:3px;
@@ -80,7 +79,7 @@ header{
 
 nav{
     display:flex;
-    gap:28px; /* Giữ khoảng cách vừa vặn */
+    gap:28px;
     margin: 0 15px;
 }
 
@@ -113,7 +112,6 @@ nav a:hover{
     color:#d8c08a;
 }
 
-/* Khối điều hướng bên phải gồm Ngôn ngữ và Đặt phòng */
 .header-right {
     display: flex;
     align-items: center;
@@ -121,7 +119,6 @@ nav a:hover{
     flex-shrink: 0;
 }
 
-/* Thiết kế cụm chuyển đổi ngôn ngữ tinh tế */
 .lang-switcher {
     color: #fff;
     font-size: 13px;
@@ -590,7 +587,7 @@ footer p{
     line-height:30px;
 }
 
-/* ================= SCRIPT.JS ANIMATION ================= */
+/* ================= ANIMATIONS ================= */
 
 .hidden{
     opacity:0;
@@ -603,7 +600,7 @@ footer p{
     transform:translateY(0);
 }
 
-/* ================= NÚT LIÊN HỆ NỔI (FLOATING WIDGETS) ================= */
+/* ================= FLOATING WIDGETS ================= */
 
 .floating-contact {
     position: fixed;
@@ -654,125 +651,37 @@ footer p{
 }
 
 @keyframes phonePulse {
-    0% {
-        box-shadow: 0 0 0 0 rgba(46, 204, 113, 0.7);
-    }
-    70% {
-        box-shadow: 0 0 0 15px rgba(46, 204, 113, 0);
-    }
-    100% {
-        box-shadow: 0 0 0 0 rgba(46, 204, 113, 0);
-    }
+    0% { box-shadow: 0 0 0 0 rgba(46, 204, 113, 0.7); }
+    70% { box-shadow: 0 0 0 15px rgba(46, 204, 113, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(46, 204, 113, 0); }
 }
 
-/* ================= RESPONSIVE (TƯƠNG THÍCH THIẾT BỊ) ================= */
+/* ================= RESPONSIVE ================= */
 
 @media(max-width:992px){
-
-    header{
-        padding:20px 5%;
-    }
-
-    nav{
-        display:none; 
-    }
-
-    /* Trên Mobile & Máy tính bảng, bỏ thanh kẻ dọc phân cách */
-    .lang-switcher {
-        border-right: none;
-        padding-right: 0;
-    }
-
-    .book-btn{
-        display:none;
-    }
-
-    .hero{
-        justify-content:center;
-        text-align:center;
-    }
-
-    .hero-content{
-        margin:0;
-        padding:0 25px;
-    }
-
-    .hero h1{
-        font-size:60px;
-        line-height:65px;
-    }
-
-    .hero h3{
-        font-size:22px;
-    }
-
-    .hero-buttons{
-        justify-content:center;
-        flex-wrap:wrap;
-    }
-
-    .about-grid{
-        grid-template-columns:1fr;
-    }
-
-    .room-grid{
-        grid-template-columns:1fr;
-    }
-
-    .cards{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .gallery-grid{
-        grid-template-columns:1fr;
-    }
-
-    .contact-info{
-        grid-template-columns:1fr;
-        gap: 15px;
-    }
-
-    h2{
-        font-size:42px;
-    }
+    header{ padding:20px 5%; }
+    nav{ display:none; }
+    .lang-switcher { border-right: none; padding-right: 0; }
+    .book-btn{ display:none; }
+    .hero{ justify-content:center; text-align:center; }
+    .hero-content{ margin:0; padding:0 25px; }
+    .hero h1{ font-size:60px; line-height:65px; }
+    .hero h3{ font-size:22px; }
+    .hero-buttons{ justify-content:center; flex-wrap:wrap; }
+    .about-grid{ grid-template-columns:1fr; }
+    .room-grid{ grid-template-columns:1fr; }
+    .cards{ grid-template-columns:repeat(2,1fr); }
+    .gallery-grid{ grid-template-columns:1fr; }
+    .contact-info{ grid-template-columns:1fr; gap: 15px; }
+    h2{ font-size:42px; }
 }
 
 @media(max-width:576px){
-
-    .cards{
-        grid-template-columns:1fr;
-    }
-
-    .hero h1{
-        font-size:46px;
-        line-height:52px;
-    }
-
-    .sub-title{
-        letter-spacing:3px;
-        font-size:12px;
-    }
-
-    .description{
-        font-size:16px;
-        line-height:28px;
-    }
-
-    .primary,
-    .secondary{
-        width:100%;
-        text-align:center;
-    }
-
-    .floating-contact {
-        bottom: 15px;
-        right: 15px;
-        gap: 10px;
-    }
-
-    .floating-btn {
-        width: 45px;
-        height: 45px;
-        font-size: 18px;
-    }
+    .cards{ grid-template-columns:1fr; }
+    .hero h1{ font-size:46px; line-height:52px; }
+    .sub-title{ letter-spacing:3px; font-size:12px; }
+    .description{ font-size:16px; line-height:28px; }
+    .primary, .secondary{ width:100%; text-align:center; }
+    .floating-contact { bottom: 15px; right: 15px; gap: 10px; }
+    .floating-btn { width: 45px; height: 45px; font-size: 18px; }
 }
